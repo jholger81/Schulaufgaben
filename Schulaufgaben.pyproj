@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c478c21e-d2e3-4a32-960e-a6f7f449771e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Kapitel4_Aufgabe3.py</StartupFile>
+    <StartupFile>Kapitel5_Aufgabe2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -33,6 +33,8 @@
     <Compile Include="Kapitel4_Aufgabe1.py" />
     <Compile Include="Kapitel4_Aufgabe2.py" />
     <Compile Include="Kapitel4_Aufgabe3.py" />
+    <Compile Include="Kapitel5_Aufgabe1.py" />
+    <Compile Include="Kapitel5_Aufgabe2.py" />
     <Compile Include="sprachtest.py" />
     <Compile Include="tests.py" />
   </ItemGroup>
