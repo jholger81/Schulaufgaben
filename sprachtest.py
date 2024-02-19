@@ -3,6 +3,7 @@ import Kapitel3_Aufgabe1_Hilfsfunktionen
 from gtts import gTTS
 from pygame import mixer
 import time
+import os
 
 def text_to_speech(text):
     speech = gTTS(text, lang = "de")
@@ -13,6 +14,9 @@ def text_to_speech(text):
     mixer.music.play()
     while mixer.music.get_busy():
         time.sleep(1)
+    mixer.music.stop()
+    mixer.quit()
+    
 
 #text_to_speech("hello world")
-text_to_speech("Guten Morgen, Herr Bensch.")
+#text_to_speech("Guten Morgen, Herr Bensch.")

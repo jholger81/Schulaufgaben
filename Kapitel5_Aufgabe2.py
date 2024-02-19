@@ -41,8 +41,7 @@ class Punkt:
     def __call__(self, x, y):
         self.x = x
         self.y = y
-        
-    
+   
 
 
 p1 = Punkt(1.0, 2.0)

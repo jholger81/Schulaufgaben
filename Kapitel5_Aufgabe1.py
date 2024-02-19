@@ -1,3 +1,5 @@
+import sprachtest
+
 class Dreieck:
     def __init__(self, a, b, c):
         if ((a*a + b*b) == (c*c)):
@@ -10,15 +12,17 @@ class Dreieck:
             self.__c = 5
     
     def Ausgabe(self):
-        print("Die Seiten des Dreiecks lauten: ", end = "")
-        print(self.__a, end = " ")
-        print(self.__b, end = " ")
-        print(self.__c)
+        mystring = "Die Seiten des Dreiecks lauten: " + str(self.__a) + " " + str(self.__b) + " " + str(self.__c)
+        print(mystring)
+        sprachtest.text_to_speech(mystring)
         
     def Seiten(self):
         mytuple = (self.__a, self.__b, self.__c)
         return mytuple
-    
+         
+    def Spachausgabe(self, text):
+        sprachtest.text_to_speech(text)
+        
 d_1 = Dreieck(1, 2, 3)
 d_2 = Dreieck(6, 8, 10)
 d_1.Ausgabe()
