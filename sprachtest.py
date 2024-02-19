@@ -1,9 +1,8 @@
-from ast import If
-import Kapitel3_Aufgabe1_Hilfsfunktionen
+import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 from gtts import gTTS
 from pygame import mixer
 import time
-import os
 
 def text_to_speech(text):
     speech = gTTS(text, lang = "de")
@@ -17,6 +16,3 @@ def text_to_speech(text):
     mixer.music.stop()
     mixer.quit()
     
-
-#text_to_speech("hello world")
-#text_to_speech("Guten Morgen, Herr Bensch.")
